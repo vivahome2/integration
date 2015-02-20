@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>This is sample for static contents.</title>
+<script>
+var _params = document.location.search;
+var _iframe = document.createElement('iframe');
+_iframe.setAttribute('src', '/docs/test.html'+_params);
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-48400818-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+<body>
+This is sample for static contents.
+<div id="iframe"></div>
+<script>
+var _div = document.getElementById('iframe');
+_div.appendChild(_iframe);
+</script>
+
+<a class="clickable" href="http://www.google.com/">aaa</a>
+<a class="clickable" href="http://www.google.com/">bbb</a>
+</body>
+</html>
